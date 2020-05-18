@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+@import url(https://bootswatch.com/4/superhero/bootstrap.min.css);
+
+.app-clickable{
+cursor: pointer;
+}
+  html, body {
+        margin: 0;
+        padding: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .slider {
+          width: 80%;
+          height: 350px;
+          margin: 100px auto;
+      }
+
+      .slick-slide {
+        margin: 0px 00px;
+      }
+
+      .slick-slide img {
+        width: 100%;
+      }
+
+      .slick-prev:before,
+      .slick-next:before {
+        color: black;
+      }
+
+
+      .slick-slide {
+        transition: all ease-in-out .3s;
+        opacity: .0;
+      }
+
+      .slick-active {
+        opacity: .5;
+      }
+
+      .slick-current {
+        opacity: 1;
+      }
+

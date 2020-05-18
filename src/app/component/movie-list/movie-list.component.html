@@ -1,0 +1,12 @@
+<h1>{{title}}  List</h1>
+<div class="row">
+  <div class="card col-md-3 col-sm-6 px-1 col-xs-12" *ngFor="let mm of movie">
+    <div class="alert alert-info app-clickable" [routerLink]="['/movie-details', mm.imdbID]">
+      <div class="card-body">
+        <h5 class="card-title">Title: {{mm.Title}}</h5>
+        <p class="card-text">Year: {{mm.Year}}</p>
+      </div>
+      <img class="card-img-top img-thumbnail" src="{{ mm.Poster }}" [alt]=" mm.Title ">
+    </div>
+  </div>
+</div>
